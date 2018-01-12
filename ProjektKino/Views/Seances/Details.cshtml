@@ -1,0 +1,50 @@
+﻿@model ProjektKino.Models.Seance
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Seance</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.start)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.start)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.length)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.length)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.movieId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.movieId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hallId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hallId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.seanceId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

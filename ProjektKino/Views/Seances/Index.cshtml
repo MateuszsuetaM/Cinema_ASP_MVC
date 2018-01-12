@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ProjektKino.Models.Seance>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.start)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.length)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.movieId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hallId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.start)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.length)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.movieId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hallId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.seanceId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.seanceId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.seanceId })
+        </td>
+    </tr>
+}
+
+</table>
