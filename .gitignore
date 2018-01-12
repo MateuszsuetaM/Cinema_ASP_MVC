@@ -8,6 +8,7 @@ ProjektKino.sln
 /ProjektKino/Scripts/*
 /ProjektKino/ApplicationInsights.config
 /ProjektKino/Global.asax.cs
+/ProjektKino/Global.asax
 /ProjektKino/packages.config
 /ProjektKino/ProjektKino.csproj
 /ProjektKino/ProjektKino.csproj.user
